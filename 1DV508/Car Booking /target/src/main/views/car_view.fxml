@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@css/carView.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.code.carrentalsystem.views.CarView">
+   <children>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="725.0" styleClass="hbox">
+         <children>
+            <Label fx:id="cars_in_database" prefHeight="70.0" prefWidth="472.0" text="You Have X cars In the Database." wrapText="true">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <JFXButton onAction="#add_car" ripplerFill="#82a3fc" text="Add Car" />
+         </children>
+      </HBox>
+      <ScrollPane hbarPolicy="NEVER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="725.0" styleClass="scrolPane">
+         <content>
+            <FlowPane fx:id="flowPane" hgap="40.0" prefHeight="363.0" prefWidth="725.0" prefWrapLength="10.0" styleClass="flowpane" vgap="40.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

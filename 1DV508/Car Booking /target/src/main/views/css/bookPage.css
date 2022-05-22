@@ -1,0 +1,19 @@
+.root{
+    -fx-background-image: url(bg_image2.png);
+    -fx-pref-width: 600;
+    -fx-pref-height: 400;
+}
+
+.hbox{
+    -fx-background-color: rgba(232, 207, 149, .30);
+}
+
+.button{
+    -fx-background-color: #F59E9E;
+    -fx-text-fill: white;
+    -fx-font-family: 'Segoe UI';
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-pref-width: 150;
+    -fx-pref-height: 40;
+}

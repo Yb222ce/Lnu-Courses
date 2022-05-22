@@ -1,0 +1,14 @@
+.root{
+    -fx-background-color: rgba(255, 255, 255, .45);
+}
+
+.button{
+    -fx-background-color: rgba(184, 255, 154, 1);
+    -fx-text-fill: rgba(130, 163, 252, 1);
+    -fx-font-family: 'Segoe UI';
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-pref-width: 200;
+    -fx-pref-height: 40;
+    -fx-background-radius: 10;
+}

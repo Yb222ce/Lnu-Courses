@@ -1,0 +1,9 @@
+.root{
+    -fx-background-image: url(bg_image2.png);
+    -fx-pref-width: 600;
+    -fx-pref-height: 400;
+}
+
+.box_container{
+    -fx-background-color: rgba(255, 255, 255, .23);
+}

@@ -1,0 +1,17 @@
+.root{
+    -fx-background-image: url(bg_user.png);
+    -fx-pref-width: 600;
+    -fx-pref-height: 600;
+}
+
+.hbox{
+    -fx-background-color: rgba(0, 0, 0, .6);
+}
+
+.button{
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-pref-width: 155;
+    -fx-pref-height: 42;
+}
