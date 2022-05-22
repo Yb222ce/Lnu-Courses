@@ -1,0 +1,39 @@
+@startuml
+Main -[#red]> MainController: startsGame()
+activate MainController
+loop until Integer.parseInt(console.getKeyboard()) == 0
+MainController -> CommandUi: showGeneralPrompt()
+activate CommandUi
+CommandUi --> MainController: getKeyboard()
+deactivate CommandUi
+
+MainController -> CommandUi: createMember()
+activate CommandUi
+CommandUi -> "John:Member"
+activate "John:Member"
+"John:Member" --> CommandUi: <<create>>
+deactivate "John:Member"
+CommandUi --> MainController
+deactivate CommandUi
+
+MainController -[#blue]> MemberGroup: addMember(John)
+activate MemberGroup
+activate CommandUi
+alt#Gold #LightBlue Successful case
+    MemberGroup --> CommandUi: true(This member was successfully added to registry)
+else #Pink Failure case
+    MemberGroup --> CommandUi: false(This member ID already exists)
+end
+deactivate MemberGroup
+
+CommandUi --> MainController: memberAddedMessage(true/fasle)
+deactivate CommandUi
+
+end
+
+' CommandUi -> MemberGroup: Another authentication Request
+' MemberGroup --> "John:Member": getMemberInt()
+' MainController -> Boat: getBoat()
+' MainController -> MemberGroup: getMemberGroup()
+' CommandUi -> MainController: getMember()
+@enduml
