@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="tableview" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="org.code.carrentalsystem.views.Users">
+  <columns>
+    <TableColumn fx:id="name" prefWidth="107.0" text="Name" />
+    <TableColumn fx:id="phone_number" prefWidth="102.0" text="Phone Number" />
+      <TableColumn fx:id="email" minWidth="0.0" prefWidth="149.0" text="Email" />
+      <TableColumn fx:id="address" minWidth="0.0" prefWidth="176.0" text="Address" />
+      <TableColumn fx:id="admin" minWidth="0.0" text="Admin" />
+  </columns>
+</TableView>

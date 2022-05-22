@@ -1,0 +1,30 @@
+.root{
+    -fx-pref-width: 725;
+    -fx-pref-height: 400;
+}
+.hbox{
+    -fx-background-color: rgba(255, 255, 255, .45);
+    -fx-pref-width: 725;
+    -fx-pref-height: 70;
+}
+
+.button{
+    -fx-background-color: rgba(184, 255, 154, 1);
+    -fx-text-fill: rgba(130, 163, 252, 1);
+    -fx-font-family: 'Segoe UI';
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-pref-width: 150;
+    -fx-pref-height: 40;
+}
+
+.scrolPane{
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-pref-width: 725;
+    -fx-pref-height: 340;
+}
+
+.flowpane{
+    -fx-pref-width: 725;
+    -fx-background-color: rgba(255, 255, 255, 0);
+}

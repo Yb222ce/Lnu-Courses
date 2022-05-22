@@ -1,0 +1,22 @@
+.root{
+    -fx-background-image: url(bg_image.jpg);
+    -fx-background-position: -50;
+    -fx-background-size: 110%;
+    -fx-pref-width: 1000;
+    -fx-pref-height: 600;
+}
+.vbox{
+    -fx-background-color: rgba(255, 255, 255, .45);
+    -fx-background-radius: 0 0 50 0
+}
+
+.button{
+    -fx-background-color: rgba(184, 255, 154, 1);
+    -fx-text-fill: rgba(130, 163, 252, 1);
+    -fx-font-family: 'Segoe UI';
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-pref-width: 200;
+    -fx-pref-height: 40;
+    -fx-background-radius: 10;
+}

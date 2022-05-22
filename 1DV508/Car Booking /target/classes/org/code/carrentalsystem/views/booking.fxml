@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@css/bookPage.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.code.carrentalsystem.views.Booking">
+   <children>
+      <HBox layoutX="13.0" layoutY="13.0" prefHeight="300.0" prefWidth="575.0" styleClass="hbox">
+         <children>
+            <VBox prefHeight="375.0" prefWidth="240.0" spacing="25.0">
+               <children>
+                  <Label text="Customer:" textFill="#ffa4a4">
+                     <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="10.0" text="Cost Per Day:" textFill="#ffa4a4">
+                     <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="34.0" text="Borrowed Date:" textFill="#ffa4a4">
+                     <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="58.0" text="Returned Date:" textFill="#ffa4a4">
+                     <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="30.0" right="20.0" top="75.0" />
+               </padding>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="375.0" prefWidth="337.0" spacing="25.0">
+               <children>
+                  <ComboBox fx:id="customer" editable="true" prefHeight="25.0" prefWidth="286.0" />
+                  <TextField fx:id="cost_per_day" />
+                  <DatePicker fx:id="borrowed_date" prefHeight="25.0" prefWidth="294.0" />
+                  <DatePicker fx:id="returned_date" layoutX="40.0" layoutY="185.0" prefHeight="25.0" prefWidth="294.0" />
+               </children>
+               <padding>
+                  <Insets left="30.0" right="20.0" top="75.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="13.0" layoutY="313.0" prefHeight="73.0" prefWidth="575.0" spacing="80.0" styleClass="hbox">
+         <children>
+            <JFXButton onAction="#book" text="Book" />
+            <JFXButton layoutX="276.0" layoutY="33.0" onAction="#cancel" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

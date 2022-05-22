@@ -1,0 +1,27 @@
+.root{
+    -fx-background-image: url(bg_image.jpg);
+    -fx-background-position: -130;
+    -fx-background-size: 180%;
+}
+
+.vbox{
+    -fx-background-color: rgba(100, 104, 104, .7);
+    -fx-background-radius: 20;
+}
+
+.inputField{
+    -fx-background-radius: 15;
+    -fx-pref-width: 240;
+    -fx-pref-height: 50;
+}
+
+.inputField:focused{
+    -fx-background-radius: 15;
+    -fx-pref-width: 260;
+    -fx-pref-height: 50;
+}
+
+.button{
+    -fx-background-color: rgba(184, 255, 154, 1);
+    -fx-text-fill: rgba(130, 163, 252, 1);
+}

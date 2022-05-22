@@ -1,0 +1,31 @@
+.root{
+    -fx-background-image: url(bg_image.jpg);
+    -fx-background-position: -150;
+    -fx-background-size: 150%;
+    -fx-pref-width: 700;
+    -fx-pref-height: 600;
+}
+
+.button{
+    -fx-background-color: rgba(184, 255, 154, 1);
+    -fx-text-fill: rgba(130, 163, 252, 1);
+    -fx-font-family: 'Segoe UI';
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-pref-height: 40;
+}
+.button_deny{
+    -fx-background-color: rgba(255, 154, 154, 1);
+    -fx-text-fill: rgba(255, 255, 255, 1);
+    -fx-font-family: 'Segoe UI';
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-pref-height: 40;
+}
+
+.vbox{
+    -fx-background-color: rgba(100, 104, 104, .5);
+    -fx-background-radius: 20;
+    -fx-pref-width: 500;
+    -fx-pref-height: 200;
+}
